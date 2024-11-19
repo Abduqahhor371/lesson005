@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+     <!-- Header -->
+     <header class="header">
+        <div class="container">
+           <nav class="navbar">
+              <div class="navbar__logo">
+                 <a href="#">
+                    <img src="./assets/logo-javascript.svg" alt="logo" />
+                    <h3>JavaScript</h3>
+                 </a>
+              </div>
+              <ul class="navbar__collection">
+                 <li class="navbar__item">
+                    <a href="#" class="navbar__link"><span>About</span></a>
+                 </li>
+                 <li class="navbar__item">
+                    <a href="#math" class="navbar__link"
+                       ><span>Math object</span></a
+                    >
+                 </li>
+                 <li class="navbar__item">
+                    <a href="#data" class="navbar__link"
+                       ><span>Data Type</span></a
+                    >
+                 </li>
+                 <li class="navbar__item">
+                    <a href="#condition" class="navbar__link"
+                       ><span>If Alse</span></a
+                    >
+                 </li>
+                 <li class="navbar__item">
+                    <a href="#loop" class="navbar__link"
+                       ><span>Loop</span></a
+                    >
+                 </li>
+              </ul>
+              <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+           </nav>
+        </div>
+     </header>
+     <main>
+        <!-- Hero -->
+        <div class="hero">
+           <div class="container">
+              <div class="hero__wrapper">
+                 <div class="hero__content">
+                    <h1 class="hero__title">JavaScript - Brendan Eich</h1>
+                    <p class="hero__desc">
+                       JavaScript - bu dasturlash tili bo'lib, asason
+                       web-sahifalarda interaktivlik yaratish uchun
+                       ishlatiladi. U 1995 yilda Brendan Eich tomonidan
+                       Netscape kompaniyasida ishlab chiqilgan Dastlab "Mocha"
+                       deb nomlangan,keyin "LiveScript"va nihoyat "JavaScript"
+                       deb o'zgartirildi
+                    </p>
+                 </div>
+                 <div class="hero__image">
+                    <img src="./assets/counder.avif" alt="Brendan" />
+                 </div>
+              </div>
+              <div class="hero__history">
+                 <h2 class="hero__history-title">Tarixi va rivojlanishi</h2>
+                 <p>1995: Brendan Eich JavaScriptni ishlab chiqadi</p>
+                 <p>
+                    1996: JavaScript standartlashtiriladi va ECMAScript nomi
+                    bilan tanilgan,
+                 </p>
+                 <p>
+                    2005-yillar: AJAX texnologiyalari bilan JavaScripning
+                    ommolashuvi boshlanadi.
+                 </p>
+                 <p>
+                    2015: ECMAScript 6 (ES6) chiqariladi, bu JavaScripning
+                    katta yangilanishidir va yangi sintaksis va funksuyalarini
+                    kiritadi.
+                 </p>
+              </div>
+              <div class="hero__use">
+                 <h2 class="hero__use-title">Foydalanish joylari</h2>
+                 <p class="hero__use-desc">
+                    Veb-sahifalar: Interaktiv elementlar yaratish uchun
+                    (tugmalar, formalar, animatsiyalar).
+                 </p>
+                 <p>Server: Node.js orqali server kodlari yozish.</p>
+                 <p>
+                    Mobil Ilovalar: React Native yordamida mobil ilovalar
+                    yaratish.
+                 </p>
+                 <p>
+                    Analitika: Foydalanuvchi harakatlarini kuzatish va tahlil
+                    qilish.
+                 </p>
+              </div>
+           </div>
+        </div>
+        <!-- Array method -->
+        <section id="math">
+           <div class="container">
+              <div class="math__text">
+                 <h2>Array metodlar</h2>
+              </div>
+              <div class="math__wrapper">
+                 <div class="math__card">
+                    <h3 class="math__title">Map</h3>
+                    <p class="math__desc">
+                     Transforms each element in the array.
+                    </p>
+                    </div>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Filter</h3>
+                    <p class="math__desc">
+                     Filters elements based on a condition.
+                    </p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Reduces</h3>
+                    <p class="math__desc">
+                     Reduces the array to a single value.
+                    </p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Sort</h3>
+                    <p class="math__desc">Sorts elements in the array.</p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">forEach</h3>
+                    <p class="math__desc">
+                     Executes a function on each element.
+                    </p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Find</h3>
+                    <p class="math__desc">
+                     Finds the first element that matches a condition.
+                    </p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Some</h3>
+                    <p class="math__desc">
+                     Checks if some elements match a condition.
+                    </p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Every</h3>
+                    <p class="math__desc">
+                     Checks if all elements match a condition.
+                    </p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Includes</h3>
+                    <p class="math__desc">
+                     Checks if an array contains a value..
+                    </p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Concat</h3>
+                    <p class="math__desc">
+                     Combines two or more arrays.
+                    </p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Slice</h3>
+                    <p class="math__desc">
+                     Adds/Removes elements from an array.
+                    </p>
+                 </div>
+                 <div class="math__card">
+                    <h3 class="math__title">Splice</h3>
+                    <p class="math__desc">
+                       Adds/Removes elements from an array.
+                    </p>
+                 </div>
+              </div>
+           </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+           <div class="container">
+              <nav class="footer__navbar">
+                 <div class="footer__logo">
+                    <a href="#">
+                       <img src="./assets/logo-javascript.svg" alt="logo" />
+                       <h3>JavaScript</h3>
+                    </a>
+                 </div>
+                 <ul class="footer__collection">
+                    <li class="footer__item">
+                       <a href="https:t.me//samandar_2317" target="_blank"
+                          ><i
+                             class="fa-brands fa-telegram"
+                             style="color: #ffd43b"
+                          ></i
+                       ></a>
+                    </li>
+                    <li class="footer__item">
+                       <a href="#"
+                          ><i
+                             class="fa-brands fa-instagram"
+                             style="color: #ffd43b"
+                          ></i
+                       ></a>
+                    </li>
+                    <li class="footer__item">
+                       <a href="#"
+                          ><i
+                             class="fa-brands fa-twitter"
+                             style="color: #ffd43b"
+                          ></i
+                       ></a>
+                    </li>
+                 </ul>
+              </nav>
+           </div>
+        </footer>
+     </main>
+</body>
+</html>
